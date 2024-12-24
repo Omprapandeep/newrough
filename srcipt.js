@@ -1,6 +1,6 @@
 
 async function main() {
-    let a = await fetch("./audio")
+    let a = await fetch("./audio/Dekho%20Na%20Dekho%20Na-%20Anuva%20Jain.mp3")
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML=response
@@ -14,6 +14,7 @@ async function main() {
             songs.push(e.href)
         }
     }
+    console.log(songs[0])
     return songs;
 
 }
